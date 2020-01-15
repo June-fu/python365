@@ -25,6 +25,6 @@ def find_gcd(x, y):
 
 nums = [2, 4, 6, 8]
 gcd = find_gcd(nums[0], nums[1])
-for i  in range(2, len(nums)):
+for i in range(2, len(nums)):
     gcd = find_gcd(gcd, nums[i])
 print(gcd)
