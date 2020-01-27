@@ -30,7 +30,6 @@ def group1(list1, size):
 if __name__ == '__main__':
     print(group([1, 2, 3, 4, 5, 6, 7, 8, 9], 4))
     print(group1([1, 2, 3, 4, 5, 6, 7, 8, 9], 4))
-    print(group([1, 2, 3, 4, 5, 6, 7, 8, 9], 4))
-    print(group([1, 2, 3, 4, 5, 6, 7, 8, 9], 4))
+
 
 
