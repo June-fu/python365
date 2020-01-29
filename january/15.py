@@ -13,9 +13,9 @@ def how_many_numbers():
     for i in range(1, 5):
         for j in range(1, 5):
             for k in range(1, 5):
-                    if i != j and j != k and k != i:
-                        total_numbers += 1
-                        print(i * 100 + j * 10 + k)
+                if i != j and j != k and k != i:
+                    total_numbers += 1
+                    print(i * 100 + j * 10 + k)
     return total_numbers
 
 
