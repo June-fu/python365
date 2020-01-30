@@ -30,3 +30,7 @@ if __name__ == '__main__':
     x = input('请输入日期（yyyy-mm-dd)：')
     doy = day_of_year(x)
     print('%s 是这一年的第%d天' % (x, doy))
+
+    import time
+    y = time.strptime(x, "%Y-%m-%d").tm_yday
+    print('%s 是这一年的第%d天' % (x, y))
