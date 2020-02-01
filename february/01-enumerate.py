@@ -39,6 +39,11 @@ def parse_csv(filename):
         return [line.rstrip().split() for line in f.readlines()]
 
 
+def parse_csv2(filename, delimiter, comment):
+    with open(filename) as f:
+        return [line.rstrip().split(delimiter) for line in f.readlines() if not line.startswith(comment)]
+
+
 if __name__ == '__main__':
     print(enumerate1(["a", "b", "c"]))
     for index, value in enumerate(["a", "b", "c"]):
@@ -46,3 +51,4 @@ if __name__ == '__main__':
 
     print(array(2, 3))
     print(parse_csv('a.csv'))
+
