@@ -24,7 +24,7 @@ def zip1(*args):
     for i in range(len(args)):
         globals()['iter' + str(i)] = args[i]
 
-    return [tuple(globals()['iter' + str(i)][j] for i in range(len(args))) for j in shortest_sequence_range(*args)]
+    return (tuple(globals()['iter' + str(i)][j] for i in range(len(args))) for j in shortest_sequence_range(*args))
 
 
 if __name__ == '__main__':
