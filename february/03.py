@@ -13,17 +13,27 @@
 from functools import reduce
 
 
+# def approximation(num):
+#     lst = []
+#     for x in range(1, num):
+#         if not num % x:
+#             lst.append(x)
+#     return lst
+
+
 def approximation(num):
-    lst = []
-    n = num
-    for x in range(1, num):
-        if not n % x:
-            lst.append(x)
-    return lst
+    return [x for x in range(1, num) if not num % x]
 
 
 def is_perfect_number(num):
     if num == reduce(lambda x, y: x + y, approximation(num)):
+        return True
+    else:
+        return False
+
+
+def is_perfect_number2(num):
+    if num == reduce(lambda x, y: x + y, [x for x in range(1, num) if not num % x]):
         return True
     else:
         return False
@@ -34,3 +44,7 @@ if __name__ == '__main__':
     for i in range(2, 1001):
         if is_perfect_number(i):
             print(i, approximation(i))
+
+    for i in range(2, 1001):
+        if is_perfect_number2(i):
+            print(i)
