@@ -26,5 +26,16 @@ def center_align(filename):
         return ''.join(lst_file)
 
 
+# use center() function
+def center_align2(filename):
+    with open(filename) as f:
+        lst_file = f.readlines()
+
+        for line in lst_file:
+            print(line[:-1].center(max([len(x) for x in lst_file]), ' '))
+
+
 if __name__ == '__main__':
     print(center_align('she.txt'))
+    print(center_align2('she.txt'))
+
