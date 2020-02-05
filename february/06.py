@@ -32,7 +32,15 @@ def sum_of_factorial2(num):
     return s
 
 
+def factorial2(num):
+    if num == 1:
+        return 1
+    else:
+        return num * factorial2(num - 1)
+
+
 if __name__ == '__main__':
     print(sum_of_factorial(20))
     print(sum_of_factorial2(20))
     print(sum(map(factorial, range(1, 21))))
+    print(factorial2(3))
