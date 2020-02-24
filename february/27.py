@@ -5,7 +5,7 @@
 # Date  : 2020/2/25
 """
 Problem 6: Write a program antihtml.py that takes a URL as argument,
-downloads the html from web and print it after stripping html tags.
+ downloads the html from web and print it after stripping html tags.
 
 $ python antihtml.py index.html
 ...
