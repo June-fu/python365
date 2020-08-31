@@ -20,4 +20,4 @@ def my_zip(filename, *args):
 
 
 if __name__ == '__main__':
-    my_zip("foo.zip", "../january/01.py", "../january/02.py")
+    my_zip("foo.zip", "../04April/01-is_unique.py", "../january/02.py")
