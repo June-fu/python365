@@ -5,6 +5,7 @@
 # Date  : 2020/8/31
 """
 Series is ndarray-like
+
 """
 import numpy as np
 import pandas as pd
