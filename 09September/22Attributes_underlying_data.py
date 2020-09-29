@@ -31,3 +31,8 @@ print(df)
 # To get the actual data inside a Index or Series, use the .array property
 print(ser.array)
 print(df.index.array)
+
+# If you know you need a NumPy array, use to_numpy() or numpy.asarray().
+print('########')
+print(ser.to_numpy())
+print(np.asarray(ser))
