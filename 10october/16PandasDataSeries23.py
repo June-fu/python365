@@ -16,4 +16,4 @@ print("Original Series:\n", s)
 
 s2 = pd.Series([1, 3, 5, 7])
 result = [pd.Index(s).get_loc(i) for i in s2]
-print("Position if items of s2 in s is:\n", result)
+print("Position if items of s2 in s is:\n", result)  
