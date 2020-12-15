@@ -12,4 +12,4 @@ import pandas as pd
 import numpy as np
 
 s = pd.Series(pd.date_range('2020-01-01', periods=52, freq='W-SUN'))
-print("All Sundays of 2020:\,", s)
+print("All Sundays of 2020:\n", s)
