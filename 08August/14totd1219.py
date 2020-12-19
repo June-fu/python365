@@ -8,7 +8,7 @@
  Partial assignments
  '''
 
-lst = [5, 10, 20, 30]
+lst = [5, 10, 20, 30, 40]
 
 x, *y = lst
 print(x, y)
